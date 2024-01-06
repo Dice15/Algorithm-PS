@@ -1,3 +1,3 @@
 function solution(a, b) {
-    return Math.max(parseInt(a.toString()+b.toString()), parseInt(b.toString()+a.toString()));
+    return Math.max(Number(`${a}${b}`), Number(`${b}${a}`));
 }
