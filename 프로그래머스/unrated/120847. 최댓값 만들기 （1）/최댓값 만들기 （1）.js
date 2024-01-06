@@ -1,3 +1,3 @@
 function solution(numbers) {
-    return numbers.sort((a, b) => b-a).reduce((mul, val, idx)=>mul*(idx<2 ? val : 1));
+    return numbers.sort((a, b) => b-a).slice(0, 2).reduce((mul, val)=>mul*val);
 }
