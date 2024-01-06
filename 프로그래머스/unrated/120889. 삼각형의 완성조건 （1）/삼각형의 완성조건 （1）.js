@@ -1,4 +1,3 @@
-function solution(sides) {
-    const arr=sides.sort((a, b)=>a-b);
-    return Number(arr[2]>=arr[0]+arr[1])+1;
+function solution([a, b, c]) {
+    return Number(!(a<b+c&&b<a+c&&c<a+b))+1
 }
