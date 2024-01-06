@@ -1,0 +1,1 @@
+const solution = (n) => Number(!Number.isInteger(Math.sqrt(n)))+1;
