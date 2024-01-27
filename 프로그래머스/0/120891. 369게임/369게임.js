@@ -1,3 +1,3 @@
 function solution(order) {
-    return [...order.toString()].reduce((s,e)=>+(+e%3===0 && +e!==0)+s,0);
+    return order.toString().match(/3|6|9/g)?.length||0
 }
