@@ -1,3 +1,3 @@
 function solution(arr, idx) {
-    return [...Array.from({length:idx}), ...arr.slice(idx)].indexOf(1);
+    return arr.indexOf(1, idx);
 }
