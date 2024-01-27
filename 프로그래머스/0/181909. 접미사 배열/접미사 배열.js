@@ -1,3 +1,3 @@
 function solution(str) {
-    return [...str].reduce((r,_,i)=>[...r, str.slice(i)],[]).sort();
+    return Array.from({length:str.length}).map((_,i)=>str.slice(i)).sort();
 }
