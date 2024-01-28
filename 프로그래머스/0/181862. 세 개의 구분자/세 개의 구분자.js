@@ -1,3 +1,3 @@
 function solution(str) {
-    return str.match(/[^abc]+/g)||["EMPTY"]
+    return str.match(/[^a-c]+/g)||["EMPTY"]
 }
