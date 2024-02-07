@@ -3,7 +3,6 @@ using namespace std;
 
 int solution(vector<int> nums)
 {
-    set<int> s;  
-    for(auto &e : nums) s.insert(e); 
+    set<int> s(nums.begin(), nums.end());  
     return min(nums.size()/2, s.size());
 }
